@@ -60,6 +60,7 @@
           name="input-bill"
           id="input-bill"
           placeholder="0"
+          value="0"
           class="w-full bg-[url('images/icon-dollar.svg')] bg-no-repeat bg-[1rem_center] bg-very-light-grayish-cyan my-2 p-2 rounded-md text-very-dark-cyan text-lg text-right"
         />
 
@@ -141,7 +142,8 @@
           type="number"
           name="total-people"
           id="total-people"
-          placeholder="0"
+          placeholder="1"
+          value="1"
           class="w-full bg-[url('images/icon-person.svg')] bg-no-repeat bg-[1rem_center] bg-very-light-grayish-cyan my-2 p-2 rounded-md text-very-dark-cyan text-lg text-right"
         />
       </div>
@@ -157,17 +159,22 @@
               <p>Tip Amount</p>
               <p class="text-xs text-grayish-cyan">/ person</p>
             </div>
-            <p class="text-4xl text-strong-cyan">$<span>0.00</span></p>
+            <p class="text-4xl text-strong-cyan">
+              $<span id="tip-amt">0.00</span>
+            </p>
           </div>
           <div class="flex justify-between mx-2 my-6">
             <div class="text-sm">
               <p>Total</p>
               <p class="text-xs text-grayish-cyan">/ person</p>
             </div>
-            <p class="text-4xl text-strong-cyan">$<span>0.00</span></p>
+            <p class="text-4xl text-strong-cyan">
+              $<span id="total-tip">0.00</span>
+            </p>
           </div>
         </div>
         <button
+          id="reset-btn"
           class="text-very-dark-cyan bg-strong-cyan disabled:bg-dark-grayish-cyan p-2 rounded-md uppercase"
           disabled
         >
