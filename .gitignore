@@ -15,6 +15,14 @@
 .DS_Store
 .prettierignore
 
+# Tailwind crap
+style-input.css
+tailwind.config.js
+
+# just unnecessary for production
+package-lock.json
+package.json
+
 # Logs
 logs
 *.log
